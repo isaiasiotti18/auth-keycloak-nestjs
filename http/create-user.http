@@ -1,0 +1,16 @@
+### CREATE USER API
+POST http://localhost:9090/keycloak/gen-token-create-user
+Authorization: Bearer <Aqui você coloca o token gerado no endpoint /login>
+
+### CREATE USER KEYCLOAK
+POST http://localhost:9090/keycloak/new-user
+Content-Type: application/json
+Authorization: Bearer <Aqui você coloca o token gerado no endpoint /login>
+
+{
+  "email": "keycloak@email.com.br",
+  "password": "Senha123456",
+  "firstName": "Keycloak",
+  "lastName": "NestJs",
+  "group": "users",
+}

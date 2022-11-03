@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  app:
+    image: jboss/keycloak:15.0.0
+    environment:
+      - KEYCLOAK_USER=admin
+      - KEYCLOAK_PASSWORD=admin
+      - DB_VENDOR=h2
+    volumes:
+      - /keycloak
+    command: ["-Djboss.http.port=8081"]
+    ports:
+      - 8081:8081
+    expose:
+      - '8081'
