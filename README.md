@@ -14,8 +14,19 @@
 ### Usando a aplicação
 
 ~~~
-  
+  git clone https://github.com/isaiasiotti18/auth-keycloak-nestjs.git
+
+  npm install --force
+
+  sudo docker compose up --build -d
+
+  npm run start:dev
 ~~~
+
+O console do keycloak você pode acessar através da seguinte url:
+http://localhost:8081/auth
+
+Assista o vídeo acima e você terá uma noção de como usar o keycloak com sua aplicação
 
 ### Endpoints
 
